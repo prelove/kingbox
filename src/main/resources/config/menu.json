@@ -1,0 +1,76 @@
+[
+  {
+    "key": "menu.exit",
+    "action": "exit",
+    "icon": "exit.png"
+  },
+  {
+    "key": "menu.tools",
+    "icon": "tools.png",
+    "children": [
+      {
+        "key": "menu.featureA",
+        "action": "showMessageA",
+        "icon": "a.png"
+      },
+      {
+        "key": "menu.featureB",
+        "action": "showMessageB",
+        "icon": "b.png"
+      }
+    ]
+  },
+  {
+    "key": "menu.settings",
+    "icon": "settings.png",
+    "children": [
+      {
+        "key": "menu.theme",
+        "icon": "theme.png",
+        "children": [
+          {
+            "key": "menu.theme.light",
+            "action": "themeLight",
+            "icon": "light.png"
+          },
+          {
+            "key": "menu.theme.dark",
+            "action": "themeDark",
+            "icon": "dark.png"
+          },
+          {
+            "key": "menu.theme.intellij",
+            "action": "themeIntellij",
+            "icon": "intellij.png"
+          },
+          {
+            "key": "menu.theme.darcula",
+            "action": "themeDarcula",
+            "icon": "darcula.png"
+          }
+        ]
+      },
+      {
+        "key": "menu.language",
+        "icon": "language.png",
+        "children": [
+          {
+            "key": "menu.language.zh",
+            "action": "langZh",
+            "icon": "zh.png"
+          },
+          {
+            "key": "menu.language.en",
+            "action": "langEn",
+            "icon": "en.png"
+          },
+          {
+            "key": "menu.language.ja",
+            "action": "langJa",
+            "icon": "ja.png"
+          }
+        ]
+      }
+    ]
+  }
+]
