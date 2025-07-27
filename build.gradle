@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+}
+
+group = 'org.abitware'
+version = '1.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+application {
+    mainClass = 'org.abitware.kingbox.AppMain'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // FlatLaf 主题美化
+    implementation 'com.formdev:flatlaf:3.4'
+
+    // JNativeHook 全局热键
+    implementation 'com.github.kwhat:jnativehook:2.2.2'
+
+    // logback 日志
+    implementation 'ch.qos.logback:logback-classic:1.5.13'
+
+    // Jackson JSON处理
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.3'
+}
+
+shadowJar {
+    archiveFileName = 'kingbox.jar'
+}
+
+compileJava.options.encoding = 'UTF-8'
